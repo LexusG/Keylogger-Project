@@ -8,6 +8,7 @@ Current Functionalities Includes
 - Screenshot
 - Logging Computer Information
 - Logging Clipboard Data
+- Sending All files to a Discord Server using a discord webhook 
   
 
 
